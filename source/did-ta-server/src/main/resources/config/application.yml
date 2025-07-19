@@ -2,25 +2,25 @@ spring:
   application:
     name: Tas
   profiles:
-    active: sample
+    active: dev
     group:
-        dev:
-          - auth
-          - databases
-          - wallet
-          - logging
-          - spring-docs
-          - setup
-          - blockchain
-        sample:
-          - auth
-          - databases-sample
-          - wallet
-          - logging
-          - spring-docs
-          - setup
-        lss:
-          - lss
+      dev:
+        - auth
+        - databases
+        - wallet
+        - logging
+        - spring-docs
+        - setup
+        - blockchain
+      sample:
+        - auth
+        - databases-sample
+        - wallet
+        - logging
+        - spring-docs
+        - setup
+      lss:
+        - lss
   jackson:
     default-property-inclusion: non_null
     serialization:
